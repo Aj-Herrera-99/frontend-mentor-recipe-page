@@ -1,0 +1,161 @@
+/* reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #f3e5d8;
+}
+
+.wrapper {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #5b5754;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ol {
+    padding-top: 5px;
+    padding-left: 25px;
+}
+
+ol li {
+    padding-left: 20px;
+}
+
+ol li::marker {
+    font-weight: 800;
+}
+
+li {
+    padding-block: 7px;
+}
+
+li::marker {
+    color: #854837;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+td {
+    padding-block: 10px;
+    width: 50%;
+}
+td:first-child {
+    padding-left: 20px;
+}
+
+td:last-child {
+    color: #854837;
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 35px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2c2827;
+}
+h2 {
+    font-size: 1.7rem;
+    color: #854837;
+    padding-block: 10px;
+}
+
+p {
+    padding-block: 20px;
+}
+
+strong {
+    color: #5b524e;
+}
+
+main {
+    padding-inline: 40px;
+}
+section {
+    padding-block: 20px;
+}
+
+/* preparation */
+.preparation {
+    background-color: #fff6fc;
+    padding: 20px;
+}
+
+.preparation h3 {
+    color: #6d2e4b;
+}
+
+.preparation li::marker {
+    color: #6d2e4b;
+}
+
+@media screen and (min-width: 576px) {
+    .wrapper {
+        margin: 70px auto;
+        width: 85%;
+        border-radius: 25px;
+    }
+    div:has(img) {
+        padding: 30px;
+    }
+    img {
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .wrapper {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .wrapper {
+        width: 60%;
+    }
+}
+
+/* UTIIITIES */
+.debug {
+    border: 2px solid red;
+}
+
+.debug2 {
+    border: 2px solid green;
+}
